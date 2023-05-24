@@ -141,7 +141,7 @@ main{
     font-family: var(--font-style);
     border-radius: 25px;
     border-style: none;
-    margin: 0em 0px 0px 300px
+    margin: 0em 0px 0px 300px;
 }
 
 .btn_contact:hover {
