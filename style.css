@@ -309,7 +309,7 @@ transform: translateY(1vw) scale(.5);
     height: 100%;
     padding: 20px 0;
     font-family: var(--font-style);
-     /* background: url(images_web/appareilphoto.jpg) no-repeat center; */
+     background: #cecece;
     /* background-size: cover;  */
     /* filter: blur(50px);
     z-index: -1; */

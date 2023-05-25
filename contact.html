@@ -14,15 +14,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
                 integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <title>Contact</title>
 </head>
 
 <body>
         <!-- header -->
-        <header class="nav_container">
+        <header>
                 <nav>
                         <a aria-current="page" href="index.html">Acceuil</a>
-                        <a href="#photos">à propos</a>
+                        <a href="#photos">mes photos</a>
                         <a href="#services">mes services</a>
                         <a href="contact.html">me contacter</a>
                 </nav>
@@ -31,22 +32,50 @@
                         <span class="line l2"></span>
                         <span class="line l3"></span>
                 </button>
-                </nav>
         </header>
         <main>
                 <section class="container_contact">
                         <div class="contact_box">
                                 <div class="left"></div>
-                                <form action="#" method="post" class="right">
+                                <form onsubmit="sendEmail(); reset(); return false;" method="post" class="right">
                                         <h6>Besoin d'une info ?</h6>
                                         <h3 class="text_contact">Contact</h3>
-                                        <input type="text" class="field" name="name" placeholder="Entrer votre nom..."  required="">
-                                        <input type="email" class="field" name="email" placeholder="Entrer votre email..." required="">
-                                        <input type="text" class="field" name="subject" placeholder="Entrer le sujet..." required="">
-                                        <input type="text" class="field" name="number" placeholder="Entrer votre numéro de téléphone..." required="">
-                                        <textarea name="message" class="field area" palceholder="Entrer votre message" required=""></textarea>
+                                        <input type="text" class="field" name="name" placeholder="Entrer votre nom..."
+                                                required="">
+                                        <input type="email" class="field" name="email"
+                                                placeholder="Entrer votre email..." required="">
+                                        <input type="text" class="field" name="subject" placeholder="Entrer le sujet..."
+                                                required="">
+                                        <input type="text" class="field" name="number"
+                                                placeholder="Entrer votre numéro de téléphone..." required="">
+                                        <textarea name="message" class="field area" palceholder="Entrer votre message"
+                                                required=""></textarea>
                                         <button type="submit" class="btn">Envoyer</button>
                                 </form>
                         </div>
                 </section>
         </main>
+        <script src="script.js" type="text/javascript"></script>
+        <script>
+                Email.send({
+                        SecureToken: "9cb0b7ef-eb63-4884-b5ce-90a0e3165fb7",
+                        Username: "toto27160@hotmail.fr",
+                        Password: "B22C55263600D57A765E107FAC682CF03DD1",
+                        To: 'toto27160@hotmail.fr',
+                        From: document.getElementById("email").value,
+                        Subject: "This is the subject",
+                        Body: "Name: " + document.getElementById("name").value
+                                + "<br> Email: " document.getElementById("email").value
+                                        + "<br> Phone no: " document.getElementById("number").value
+                                                + "<br> Message: " document.getElementById("message").value
+
+
+                }).then(
+                        message => alert(Message envoyé avec succés)
+                );
+        </script>
+
+        </main>
+</body>
+
+</html>
