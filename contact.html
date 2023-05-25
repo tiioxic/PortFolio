@@ -20,37 +20,32 @@
 <body>
         <!-- header -->
         <header class="nav_container">
-                <nav class="nav_content">
-                        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                        </button>
-                        <!-- <a href=""><img src="images_web/designer-graphique.png" alt="" class="logo"></a> -->
-                        <div class="navlinks_container">
-                                <a aria-current="page" href="index.html">Acceuil</a>
-                                <a href="#photos">mes photos</a>
-                                <a href="#Mes_services">mes services</a>
-                                <a href="contact.html">me contacter</a>
-                        </div>
+                <nav>
+                        <a aria-current="page" href="index.html">Acceuil</a>
+                        <a href="#photos">à propos</a>
+                        <a href="#services">mes services</a>
+                        <a href="contact.html">me contacter</a>
+                </nav>
+                <button class="nav-toggler" type="button" aria-label="toggle navigation" aria-expanded="false">
+                        <span class="line l1"></span>
+                        <span class="line l2"></span>
+                        <span class="line l3"></span>
+                </button>
                 </nav>
         </header>
         <main>
                 <section class="container_contact">
-                        <div class="contact">
-                                <div>
+                        <div class="contact_box">
+                                <div class="left"></div>
+                                <form action="#" method="post" class="right">
                                         <h6>Besoin d'une info ?</h6>
-                                        <h3>Contact</h3>
-                                </div>
-                                <form action="#" method="post">
-                                        <input type="text" name="name" placeholder="Entrer votre nom..." required="">
-                                        <input type="email" name="email" placeholder="Entrer votre email..."
-                                                required="">
-                                        <input type="text" name="subject" placeholder="Entrer le sujet..." required="">
-                                        <input type="text" name="number"
-                                                placeholder="Entrer votre numéro de téléphone..." required="">
-                                        <textarea name="message" palceholder="Entrer votre message"></textarea>
-                                        <button type="submit">Envoyer</button>
+                                        <h3 class="text_contact">Contact</h3>
+                                        <input type="text" class="field" name="name" placeholder="Entrer votre nom..."  required="">
+                                        <input type="email" class="field" name="email" placeholder="Entrer votre email..." required="">
+                                        <input type="text" class="field" name="subject" placeholder="Entrer le sujet..." required="">
+                                        <input type="text" class="field" name="number" placeholder="Entrer votre numéro de téléphone..." required="">
+                                        <textarea name="message" class="field area" palceholder="Entrer votre message" required=""></textarea>
+                                        <button type="submit" class="btn">Envoyer</button>
                                 </form>
                         </div>
                 </section>
