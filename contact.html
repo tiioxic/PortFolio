@@ -50,7 +50,7 @@
                                                 placeholder="Entrer votre numéro de téléphone..." required="">
                                         <textarea name="message" class="field area" palceholder="Entrer votre message"
                                                 required=""></textarea>
-                                        <button type="submit" class="btn">Envoyer</button>
+                                        <button type="submit" onclick="sendEmail()" class="btn">Envoyer</button>
                                 </form>
                         </div>
                 </section>
@@ -58,6 +58,7 @@
         <script src="script.js" type="text/javascript"></script>
         <script>
                 Email.send({
+                        Host: "smtp.elasticemail.com",
                         SecureToken: "851f6e2c-107b-4683-a98f-9c83fa0e5fd6",
                         Username: "toto27160@hotmail.fr",
                         Password: "123456789?",
