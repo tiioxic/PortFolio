@@ -2,81 +2,78 @@
 <html lang="fr">
 
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-                rel="stylesheet">
-        <!-- cdn fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-                integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-                crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- cdn fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Contact</title>
 </head>
 
 <body>
-        <!-- header -->
-        <header>
-                <nav>
-                        <a aria-current="page" href="index.html">Acceuil</a>
-                        <a href="#photos">mes photos</a>
-                        <a href="#services">mes services</a>
-                        <a href="contact.html">me contacter</a>
-                </nav>
-                <button class="nav-toggler" type="button" aria-label="toggle navigation" aria-expanded="false">
-                        <span class="line l1"></span>
-                        <span class="line l2"></span>
-                        <span class="line l3"></span>
-                </button>
-        </header>
-        <main>
-                <section class="container_contact">
-                        <div class="contact_box">
-                                <div class="left"></div>
-                                <form onsubmit="sendEmail(); reset(); return false;" method="post" class="right">
-                                        <h6>Besoin d'une info ?</h6>
-                                        <h3 class="text_contact">Contact</h3>
-                                        <input type="text" class="field" name="name" placeholder="Entrer votre nom..."
-                                                required="">
-                                        <input type="email" class="field" name="email"
-                                                placeholder="Entrer votre email..." required="">
-                                        <input type="text" class="field" name="subject" placeholder="Entrer le sujet..."
-                                                required="">
-                                        <input type="text" class="field" name="number"
-                                                placeholder="Entrer votre numéro de téléphone..." required="">
-                                        <textarea name="message" class="field area" palceholder="Entrer votre message"
-                                                required=""></textarea>
-                                        <button type="submit" onclick="sendEmail()" class="btn">Envoyer</button>
-                                </form>
-                        </div>
-                </section>
-        </main>
-        <script src="script.js" type="text/javascript"></script>
-        <script>
-                Email.send({
-                        Host: "smtp.elasticemail.com",
-                        SecureToken: "851f6e2c-107b-4683-a98f-9c83fa0e5fd6",
-                        Username: "toto27160@hotmail.fr",
-                        Password: "123456789?",
-                        To: 'toto27160@hotmail.fr',
-                        From: document.getElementById("email").value,
-                        Subject: "This is the subject",
-                        Body: "Name: " + document.getElementById("name").value
-                                + "<br> Email: " + document.getElementById("email").value
-                                        + "<br> Phone no: " + document.getElementById("number").value
-                                                + "<br> Message: " + document.getElementById("message").value
+    <!-- header -->
+    <header>
+        <nav>
+            <a aria-current="page" href="index.html">Acceuil</a>
+            <a href="#photos">mes photos</a>
+            <a href="#services">mes services</a>
+            <a href="contact.html">me contacter</a>
+        </nav>
+        <button class="nav-toggler" type="button" aria-label="toggle navigation" aria-expanded="false">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+    </header>
+    <main>
+        <section class="container_contact">
+            <div class="contact_box">
+                <div class="left"></div>
+                <form onsubmit="sendEmail(); reset(); return false;" method="post" class="right">
+                    <h6>Besoin d'une info ?</h6>
+                    <h3 class="text_contact">Contact</h3>
+                    <input type="text" class="field name" name="name" placeholder="Entrer votre nom..." required="">
+                    <input type="email" class="field email" name="email" placeholder="Entrer votre email..."
+                        required="">
+                    <textarea name="message" class="field area" palceholder="Entrer votre message"
+                        required=""></textarea>
+                    <button type="submit" onclick="sendEmail()" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+    <script>
+        const form = document.querySelector('.right');
+        function sendMsg(e) {
+            e.preventDefault();
+            const name = document.querySelector('.name'),
+                email = document.querySelector('.email'),
+                msg = document.querySelector('.area');
 
+            Email.send({
+                SecureToken: "e98f0380-6b96-42fc-8c45-9241b037999f",
+                To: 'toto27160@hotmail.fr',
+                From: email.value,
+                Subject: "This is the subject",
+                Body: msg.value
+            }).then(
+                message => alert('Message envoyé avec succés')
+            );
+        }
+        form.addEventListener('submit', sendMsg);
+    </script>
 
-                }).then(
-                        message => alert('Message envoyé avec succés')
-                );
-        </script>
-
-        </main>
+    </main>
 </body>
 
 </html>
