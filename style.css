@@ -137,7 +137,7 @@ h1{
 }
 
 .container_3_cards {
-    padding: 0 10%;
+    padding: 5% 10%;
     text-align: center;
     font-family: var(--font-style);
     text-transform: uppercase;
@@ -148,12 +148,10 @@ h1{
     height: 30em;
     padding: 3em 1em 11em 1em;
     border-radius: 25px;
-    margin: 50px 30px;
-    border: 1px solid #cecccc;
-    box-shadow: 12px 12px 2px 1px #35353533;
+    box-shadow: 12px 12px 12px 12px #3535352f;
     cursor: pointer;
-    background:#ffffff1a;
-    backdrop-filter: blur(30px);
+    background:#ffffff00;
+    backdrop-filter: blur(20px);
 }
 
 .card:hover{
@@ -290,7 +288,6 @@ nav a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: #fff; */
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
     border-radius: 25px;
         background: rgba(255, 255, 255, 0.1);
