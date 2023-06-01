@@ -42,6 +42,7 @@ img {
 }
 
 .logo {
+    position: fixed;
     margin-left: 150px;
     font-weight: 900;
     font-size: 30px;
@@ -53,6 +54,8 @@ img {
 
 .items-nav {
     margin-right: 5%;
+    position: absolute;
+    right: 0;
 }
 
 .items-nav a {
@@ -147,7 +150,7 @@ h1 {
 .trait {
     padding: 2px;
     background-color: #012cce;
-    width: 10%;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -176,7 +179,7 @@ h1 {
     cursor: pointer;
     background: #ffffff00;
     backdrop-filter: blur(5px);
-    width: 500px;
+    width: 80%;
     cursor: pointer;
     text-align: center;
 }
@@ -273,12 +276,14 @@ h1 {
 
     /* navbar hamburger */
     .items-nav {
+        position: relative;
         margin-right: 0;
         transform: translateY(-150px);
     }
-        .items-nav a {
-            margin: 0 auto;
-        }
+
+    .items-nav a {
+        margin: 0 auto;
+    }
 
     .nav-toggler {
         display: inherit;
