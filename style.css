@@ -51,6 +51,9 @@ img {
 .logo a {
     color: aliceblue;
 }
+.logo.active{
+    position: relative;
+}
 
 .items-nav {
     margin-right: 5%;
