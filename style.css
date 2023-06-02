@@ -241,7 +241,7 @@ h1 {
     width: 100%;
     height: 100%;
     top: -350px;
-    right: 700px;
+    right: 50%;
     background: #6573cc;
     clip-path: circle(150px at center);
 }
@@ -317,6 +317,7 @@ h1 {
 }
 
 .text-about {
+    margin: auto 0;
     font-size: clamp(0.5rem, 3.5vw, 1rem);
     width: 60%;
     z-index: 10;
@@ -404,15 +405,14 @@ h1 {
 }
 
 .circle2 {
-
-    top: -800px;
-    right: -200px;
+    top: 10%;
+    right: 20%;
 
 }
 
 .circle3 {
-    top: 0;
-    left: 270px;
+    top: -40%;
+    left: 30%;
 
 }
 
