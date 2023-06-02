@@ -131,7 +131,7 @@ img {
     min-height: 100vh;
     background: url(images_web/img_hero_blue.webp) center;
     background-size: cover;
-    font-size: clamp(10px, 2em, 30px);
+    font-size: clamp(10px, 1em, 30px)calc();
     color: #ffffff;
 }
 
