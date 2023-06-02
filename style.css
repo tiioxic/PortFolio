@@ -30,7 +30,7 @@ img {
     z-index: 100;
     align-items: center;
     width: 100%;
-    min-height: 6vh;
+    min-height: 7vh;
     background: #302f2f97;
     overflow-y: hidden;
 }
@@ -145,18 +145,21 @@ img {
     background: url(images_web/img_hero_blue.webp) center;
     background-size: cover;
     color: #ffffff;
-    font-size: clamp(1rem, 2vw, 5rem);
+    font-size: clamp(2rem, 10vw, 4rem);
 }
-
 .content-hero {
     padding: 280px 0% 0% 12%;
+}
+.content-hero p{
+    font-size: clamp(1rem, 3vw, 1.8rem);
 }
 
 .btn-contact {
     border-radius: 40px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     text-transform: uppercase;
     margin-left: 20%;
+    font-size: clamp(0.9rem, 0.5vw, 5rem);
 }
 
 .btn-contact:hover {
@@ -365,7 +368,6 @@ h1 {
     font-size: clamp(0.5em, 1.5vh, 6em);
     line-height: 45px;
 }
-
 .content-media a {
     display: flex;
     text-align: center;
