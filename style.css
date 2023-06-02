@@ -157,7 +157,7 @@ img {
     margin-left: 20%;
 }
 .btn-contact:hover{
-    background: linear-gradient(#5a5aa7 , #6573cc)
+    background: linear-gradient(#5a5aa7 ,#6573cc)
 }
 /* section cards */
 
@@ -350,7 +350,7 @@ h1 {
     align-items: center;
     margin: 0 15px;
     color:#343538;
-    font-size: 20px;
+    font-size: clamp(0.5em, 1.5vh, 6em);
     line-height: 45px;
 }
 
@@ -361,7 +361,7 @@ h1 {
     align-items: center;
     margin: 0 15px;
     color:#343538;
-    font-size: 20px;
+    font-size: clamp(0.5em, 1.5vh, 6em);
     line-height: 45px;
 }
 

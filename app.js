@@ -9,7 +9,7 @@ TL1
 TL1
 .from(txt, 4, {opacity: 0 }, '-=0.4');
 TL1
-.from(btn, 5, {opacity: 0 }, '-=0.5');
+.from(btn, 4, {opacity: 0 });
 
 
 TL1.play();
