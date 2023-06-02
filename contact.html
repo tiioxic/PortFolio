@@ -22,21 +22,24 @@
 <body>
     <!-- header -->
     <header>
-        <nav>
-            <a aria-current="page" href="index.html">Acceuil</a>
-            <a href="#photos">mes photos</a>
-            <a href="#services">mes services</a>
-            <a href="contact.html">me contacter</a>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">PortFolio.</a></div>
+            <div class="items-nav">
+                <a aria-current="page" href="index.html">Acceuil</a>
+                <a href="#photos">photos</a>
+                <a href="#services">services</a>
+                <a href="contact.html">contacte</a>
+            </div>
+            <button class="nav-toggler" type="button" aria-label="toggle navigation" aria-expanded="false">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>
         </nav>
-        <button class="nav-toggler" type="button" aria-label="toggle navigation" aria-expanded="false">
-            <span class="line l1"></span>
-            <span class="line l2"></span>
-            <span class="line l3"></span>
-        </button>
     </header>
     <main>
-        <section class="container_contact">
-            <div class="contact_box">
+        <section class="container-contact">
+            <div class="contact-box">
                 <div class="left"></div>
                 <form onsubmit="sendEmail(); reset(); return false;" method="post" class="right">
                     <h6>Besoin d'une info ?</h6>
@@ -52,27 +55,6 @@
         </section>
     </main>
     <script src="script.js" type="text/javascript"></script>
-    <script>
-        const form = document.querySelector('.right');
-        function sendMsg(e) {
-            e.preventDefault();
-            const name = document.querySelector('.name'),
-                email = document.querySelector('.email'),
-                msg = document.querySelector('.area');
-
-            Email.send({
-                SecureToken: "e98f0380-6b96-42fc-8c45-9241b037999f",
-                To: 'toto27160@hotmail.fr',
-                From: email.value,
-                Subject: "This is the subject",
-                Body: msg.value
-            }).then(
-                message => alert('Message envoyé avec succés')
-            );
-        }
-        form.addEventListener('submit', sendMsg);
-    </script>
-
     </main>
 </body>
 

@@ -185,7 +185,7 @@ h1 {
     cursor: pointer;
     background: #ffffff00;
     backdrop-filter: blur(5px);
-    width: 80%;
+    width: 25%;
     cursor: pointer;
     text-align: center;
 }
@@ -247,26 +247,59 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+.circle4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -550px;
+    top: 750px;
+    background: #71ceeb;
+    clip-path: circle(150px at center);
+}
+
+.circle5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -350px;
+    right: 500px;
+    background: #6573cc;
+    clip-path: circle(150px at center);
+}
+
+.circle6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 270px;
+    background: #5a5aa7;
+    clip-path: circle(100px at center);
+}
 
 .container-about {
+    position: relative;
     overflow-y: hidden;
     width: 100%;
     height: 100%;
 }
 
 .content-about {
+    overflow-y: hidden;
     display: flex;
     border-radius: 25px;
-    background: #ffffffa2;
+    background: #ffffff00;
     backdrop-filter: blur(2px);
     text-align: center;
     align-items: center;
     box-shadow: 12px 12px 12px 12px #3535352f;
-    width: 1000px;
+    width: 60% ;
+    height: 400px;
     margin: 5% auto; 
 }
 .img-about {
-    width: 60%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .text-about {
@@ -318,7 +351,7 @@ h1 {
 }
 
 /* responsive */
-@media (max-width: 1050px) {
+@media (max-width: 950px) {
 
     /* navbar hamburger */
     .items-nav {
@@ -344,5 +377,32 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
+    .card{
+        width: 45%;
+        margin-top: 70px;
+        
+    }
 
+
+}
+@media (max-width: 1450px) {
+        /* section about */
+.content-about{
+        flex-direction: column-reverse;
+        width: 60%;
+        height: 600px;
+        margin: 5% auto; 
+    }
+.img-about {
+    width: calc(100vw - 20%);
+    overflow-y: hidden;
+}
+.text-about {
+    width: 40%;
+    height: 30%;
+    z-index: 10;
+    overflow-y: hidden;
+    margin: auto 0;
+
+}
 }
