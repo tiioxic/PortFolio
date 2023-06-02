@@ -145,10 +145,6 @@ img {
     color: #ffffff;
     font-size: clamp(1rem, 2vw, 5rem);
 }
-.h2{
-    
-
-}
 
 .content-hero {
     padding: 280px 0% 0% 12%;
@@ -318,6 +314,7 @@ h1 {
 }
 
 .text-about {
+    font-size: clamp(0.5rem, 3.5vw, 5rem);
     width: 60%;
     z-index: 10;
 }
