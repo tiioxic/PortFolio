@@ -156,6 +156,9 @@ img {
     text-transform: uppercase;
     margin-left: 20%;
 }
+.btn-contact:hover{
+    background: linear-gradient(#5a5aa7 , #6573cc)
+}
 /* section cards */
 
 h1 {
@@ -314,7 +317,7 @@ h1 {
 }
 
 .text-about {
-    font-size: clamp(0.5rem, 3.5vw, 5rem);
+    font-size: clamp(0.5rem, 3.5vw, 1rem);
     width: 60%;
     z-index: 10;
 }
@@ -419,12 +422,13 @@ h1 {
         /* section about */
 .content-about{
         flex-direction: column-reverse;
-        width: 60%;
+        width: 80%;
         height: 600px;
         margin: 5% auto; 
     }
 .img-about {
     width: calc(100vw - 20%);
+    height: 60%;
     overflow-y: hidden;
 }
 .text-about {
