@@ -149,7 +149,7 @@ img {
 }
 
 .content-hero {
-    padding: 280px 0% 0% 12%;
+    padding: 250px 0% 0% 10%;
 }
 
 .content-hero p {
@@ -158,10 +158,9 @@ img {
 
 .btn-contact {
     border-radius: 40px;
-    padding: 10px 15px;
+    padding: 15px 25px;
     text-transform: uppercase;
-    margin-left: 20%;
-    font-size: clamp(0.9rem, 0.5vw, 5rem);
+    font-size: clamp(1rem, 1vw, 1.8rem);
 }
 
 .btn-contact:hover {
