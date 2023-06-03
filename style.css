@@ -33,7 +33,7 @@ img {
     right: 20px;
     bottom: 20px;
     cursor: pointer;
-    z-index: 12;
+    z-index: 2;
 }
 .fleche{
     width: 25px;
