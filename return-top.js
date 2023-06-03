@@ -15,7 +15,7 @@ btnReturnTop.addEventListener('click', () => {
         // console.log(btnReturnTop.getBoundingClientRect());
         const topElementToTopViewport = btnReturnTop.getBoundingClientRect().top;
 
-        if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.50) {
+        if (scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.80) {
             btnReturnTop.classList.add('active')
         }
     })
