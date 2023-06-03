@@ -505,4 +505,7 @@ h1 {
         flex-direction: row;
         align-items: center;
     }
+    .navbar{
+        min-height: 10vh;
+    }
 }
