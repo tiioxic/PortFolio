@@ -19,6 +19,7 @@
 img {
     width: 100%;
 }
+
 /* btn return-top */
 .btn-return-top {
     width: 50px;
@@ -34,11 +35,19 @@ img {
     bottom: 20px;
     cursor: pointer;
     z-index: 2;
+    transform: translateX(200%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.btn-return-top.active {
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 .fleche {
     width: 15px;
 }
+
 /* header */
 
 .navbar {
@@ -233,7 +242,7 @@ h1 {
 
 .card img {
     width: 80%;
-    border-radius:calc(2% + 25px);
+    border-radius: calc(2% + 25px);
     object-fit: cover;
     margin: 0 auto;
 }
@@ -424,10 +433,11 @@ h1 {
     .logo {
         margin-left: 5%;
     }
+
     /* section hero */
-        .btn-contact{
-            padding: 8px 10px;
-        }
+    .btn-contact {
+        padding: 8px 10px;
+    }
 
     /* section 3card */
     .content-card {
